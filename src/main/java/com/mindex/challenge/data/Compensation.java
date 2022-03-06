@@ -68,4 +68,18 @@ public class Compensation {
                 && Objects.equals(salary, compensation.salary)
                 && Objects.equals(effectiveDate, compensation.effectiveDate);
     }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(employee,salary,effectiveDate);
+    }
+
+    @Override
+    public String toString(){
+        return "{" +
+                " employee='" + getEmployee() + "'" +
+                ", salary='" + getSalary() + "'" +
+                ", effectiveDate='" + getEffectiveDate() + "'" +
+                "}";
+    }
 }
