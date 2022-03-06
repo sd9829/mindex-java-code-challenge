@@ -4,6 +4,8 @@ import com.mindex.challenge.controller.ReportingStructureController;
 import com.mindex.challenge.data.ReportingStructure;
 
 public interface ReportingStructureService {
-    ReportingStructure read(String employeeId);
+    static ReportingStructure read(String employeeId) {
+        return null;
+    }
 
 }

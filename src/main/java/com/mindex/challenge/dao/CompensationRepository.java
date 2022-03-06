@@ -7,9 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CompensationRepository extends MongoRepository<Compensation, String> {
-    // Spring query methods
-    // https://docs.spring.io/spring-data/mongodb/docs/current/reference/html/#repositories.query-methods
-    // Compensation findByEmployee_EmployeeId(String employeeId);
     Compensation findByEmployee(Employee employee);
 
 }
