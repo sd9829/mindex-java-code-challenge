@@ -20,8 +20,8 @@ public class Compensation {
         return this.employee;
     }
 
-    public void setEmployee(){
-        this.employee = employee;
+    public void setEmployee(Employee employee){
+        this.employee = this.employee;
     }
 
     public String getSalary() {
